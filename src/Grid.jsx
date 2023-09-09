@@ -1,4 +1,5 @@
 import { range } from './utils';
+import './index.css';
 
 function Grid({ numRows, numCols }) {
   return (
