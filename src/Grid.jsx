@@ -1,20 +1,19 @@
 import { range } from './utils';
 import './index.css';
-
 function Grid({ numRows, numCols }) {
   return (
     <div className="grid">
-      {range(numRows).map((rowIndex) => (
-        <div key={`row-${rowIndex}`} className="grid-row">
-          {range(numCols).map((colIndex) => (
-            <div key={`col-${colIndex}`} className="grid-cell">
-              {/* Render content for each cell here */}
+      {range(numRows).map((rowumx) => (
+        <div key={rowumx} className="row">
+          {' '}
+          {range(numCols).map((colum) => (
+            <div key={colum} className="cell">
+              {' '}
             </div>
-          ))}
+          ))}{' '}
         </div>
       ))}
     </div>
   );
 }
 
-export default Grid;
