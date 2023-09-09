@@ -15,6 +15,55 @@
 }
 
 /* write neccessary css for the grid- simple box style, use the css reset from the star project */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin: auto 0;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+.grid {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+.row {
+  gap: 0.6rem;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  justify-content: center;
+}
+.cell {
+  height: 120px;
+  width: 120px;
+  border: 2px solid #bfc5cc;
+  border-radius: 0.6rem;
+  margin: 0 auto;
+  gap: 0.6rem;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
